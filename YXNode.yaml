@@ -5,7 +5,22 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - name: '综合优选-01-saas.susu5600.dpdns.org'
+  - name: '综合优选-01-www.zjkrmv.com'
+    type: vless
+    server: www.zjkrmv.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-02-saas.susu5600.dpdns.org'
     type: vless
     server: saas.susu5600.dpdns.org
     port: 443
@@ -20,9 +35,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '综合优选-02-blog.646474.xyz'
+  - name: '综合优选-03-1757760858.tencentapp.cn'
     type: vless
-    server: blog.646474.xyz
+    server: 1757760858.tencentapp.cn
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -35,9 +50,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '综合优选-03-yg2.ygkkk.dpdns.org'
+  - name: '综合优选-04-www.galgamex.net'
     type: vless
-    server: yg2.ygkkk.dpdns.org
+    server: www.galgamex.net
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -50,24 +65,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '综合优选-04-www.5199dy.com'
+  - name: '综合优选-05-g.lma.de5.net'
     type: vless
-    server: www.5199dy.com
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-05-www.zjkrmv.com'
-    type: vless
-    server: www.zjkrmv.com
+    server: g.lma.de5.net
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -95,112 +95,7 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '综合优选-07-cf.tencentapp.cn'
-    type: vless
-    server: cf.tencentapp.cn
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-08-1757760858.tencentapp.cn'
-    type: vless
-    server: 1757760858.tencentapp.cn
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-09-p.etime.vip'
-    type: vless
-    server: p.etime.vip
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-10-cf.727672.xyz'
-    type: vless
-    server: cf.727672.xyz
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-11-cloudflare.idc.rocks'
-    type: vless
-    server: cloudflare.idc.rocks
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-12-www.galgamex.net'
-    type: vless
-    server: www.galgamex.net
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-13-cf.130519.xyz'
-    type: vless
-    server: cf.130519.xyz
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-14-b.lma.de5.net'
+  - name: '综合优选-07-b.lma.de5.net'
     type: vless
     server: b.lma.de5.net
     port: 443
@@ -215,82 +110,7 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '综合优选-15-animal.nuaa.tech'
-    type: vless
-    server: animal.nuaa.tech
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-16-162.159.39.152'
-    type: vless
-    server: 162.159.39.152
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-17-172.64.157.118'
-    type: vless
-    server: 172.64.157.118
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-18-cu.877774.xyz'
-    type: vless
-    server: cu.877774.xyz
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-19-g.lma.de5.net'
-    type: vless
-    server: g.lma.de5.net
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '综合优选-20-www.mfyx.cn'
+  - name: '综合优选-08-www.mfyx.cn'
     type: vless
     server: www.mfyx.cn
     port: 443
@@ -305,7 +125,232 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-01-172.64.159.79'
+  - name: '综合优选-09-cf.130519.xyz'
+    type: vless
+    server: cf.130519.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-10-p.etime.vip'
+    type: vless
+    server: p.etime.vip
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-11-blog.646474.xyz'
+    type: vless
+    server: blog.646474.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-12-cloudflare.idc.rocks'
+    type: vless
+    server: cloudflare.idc.rocks
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-13-animal.nuaa.tech'
+    type: vless
+    server: animal.nuaa.tech
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-14-yg2.ygkkk.dpdns.org'
+    type: vless
+    server: yg2.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-15-162.159.39.152'
+    type: vless
+    server: 162.159.39.152
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-16-cdn.555586.xyz'
+    type: vless
+    server: cdn.555586.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-17-my.dnshe.com'
+    type: vless
+    server: my.dnshe.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-18-ftm.omnihuman.games'
+    type: vless
+    server: ftm.omnihuman.games
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-19-vsscf.top'
+    type: vless
+    server: vsscf.top
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '综合优选-20-ahblog.cn'
+    type: vless
+    server: ahblog.cn
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-01-104.18.187.113'
+    type: vless
+    server: 104.18.187.113
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-02-104.18.44.151'
+    type: vless
+    server: 104.18.44.151
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-03-104.18.111.51'
+    type: vless
+    server: 104.18.111.51
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-04-172.64.159.79'
     type: vless
     server: 172.64.159.79
     port: 443
@@ -320,7 +365,7 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-02-172.64.146.237'
+  - name: '电信优选-05-172.64.146.237'
     type: vless
     server: 172.64.146.237
     port: 443
@@ -335,9 +380,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-04-104.17.38.60'
+  - name: '联通优选-02-104.17.247.196'
     type: vless
-    server: 104.17.38.60
+    server: 104.17.247.196
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -350,9 +395,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-05-104.18.43.202'
+  - name: '联通优选-03-104.17.9.173'
     type: vless
-    server: 104.18.43.202
+    server: 104.17.9.173
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -365,9 +410,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-01-104.18.7.214'
+  - name: '联通优选-04-172.65.241.50'
     type: vless
-    server: 104.18.7.214
+    server: 172.65.241.50
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -380,9 +425,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-02-104.18.200.85'
+  - name: '联通优选-05-104.19.178.8'
     type: vless
-    server: 104.18.200.85
+    server: 104.19.178.8
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -395,9 +440,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-03-104.18.9.144'
+  - name: '移动优选-01-172.64.144.177'
     type: vless
-    server: 104.18.9.144
+    server: 172.64.144.177
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -410,37 +455,7 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-04-104.16.37.219'
-    type: vless
-    server: 104.16.37.219
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '联通优选-05-104.16.207.231'
-    type: vless
-    server: 104.16.207.231
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '移动优选-01-172.64.229.160'
+  - name: '移动优选-02-172.64.229.160'
     type: vless
     server: 172.64.229.160
     port: 443
@@ -455,7 +470,22 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '移动优选-02-162.159.22.149'
+  - name: '移动优选-04-104.18.43.246'
+    type: vless
+    server: 104.18.43.246
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '移动优选-05-162.159.22.149'
     type: vless
     server: 162.159.22.149
     port: 443
@@ -470,9 +500,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '移动优选-03-172.65.208.161'
+  - name: '全网优选-01-172.64.52.84'
     type: vless
-    server: 172.65.208.161
+    server: 172.64.52.84
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -485,9 +515,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '移动优选-04-104.17.214.107'
+  - name: '全网优选-03-172.64.159.151'
     type: vless
-    server: 104.17.214.107
+    server: 172.64.159.151
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -500,39 +530,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '全网优选-01-104.18.47.211'
+  - name: '全网优选-04-172.65.210.200'
     type: vless
-    server: 104.18.47.211
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '全网优选-02-172.64.147.127'
-    type: vless
-    server: 172.64.147.127
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '全网优选-03-198.41.211.85'
-    type: vless
-    server: 198.41.211.85
+    server: 172.65.210.200
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -554,42 +554,42 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - '综合优选-01-saas.susu5600.dpdns.org'
-      - '综合优选-02-blog.646474.xyz'
-      - '综合优选-03-yg2.ygkkk.dpdns.org'
-      - '综合优选-04-www.5199dy.com'
-      - '综合优选-05-www.zjkrmv.com'
+      - '综合优选-01-www.zjkrmv.com'
+      - '综合优选-02-saas.susu5600.dpdns.org'
+      - '综合优选-03-1757760858.tencentapp.cn'
+      - '综合优选-04-www.galgamex.net'
+      - '综合优选-05-g.lma.de5.net'
       - '综合优选-06-fn.130519.xyz'
-      - '综合优选-07-cf.tencentapp.cn'
-      - '综合优选-08-1757760858.tencentapp.cn'
-      - '综合优选-09-p.etime.vip'
-      - '综合优选-10-cf.727672.xyz'
-      - '综合优选-11-cloudflare.idc.rocks'
-      - '综合优选-12-www.galgamex.net'
-      - '综合优选-13-cf.130519.xyz'
-      - '综合优选-14-b.lma.de5.net'
-      - '综合优选-15-animal.nuaa.tech'
-      - '综合优选-16-162.159.39.152'
-      - '综合优选-17-172.64.157.118'
-      - '综合优选-18-cu.877774.xyz'
-      - '综合优选-19-g.lma.de5.net'
-      - '综合优选-20-www.mfyx.cn'
-      - '电信优选-01-172.64.159.79'
-      - '电信优选-02-172.64.146.237'
-      - '电信优选-04-104.17.38.60'
-      - '电信优选-05-104.18.43.202'
-      - '联通优选-01-104.18.7.214'
-      - '联通优选-02-104.18.200.85'
-      - '联通优选-03-104.18.9.144'
-      - '联通优选-04-104.16.37.219'
-      - '联通优选-05-104.16.207.231'
-      - '移动优选-01-172.64.229.160'
-      - '移动优选-02-162.159.22.149'
-      - '移动优选-03-172.65.208.161'
-      - '移动优选-04-104.17.214.107'
-      - '全网优选-01-104.18.47.211'
-      - '全网优选-02-172.64.147.127'
-      - '全网优选-03-198.41.211.85'
+      - '综合优选-07-b.lma.de5.net'
+      - '综合优选-08-www.mfyx.cn'
+      - '综合优选-09-cf.130519.xyz'
+      - '综合优选-10-p.etime.vip'
+      - '综合优选-11-blog.646474.xyz'
+      - '综合优选-12-cloudflare.idc.rocks'
+      - '综合优选-13-animal.nuaa.tech'
+      - '综合优选-14-yg2.ygkkk.dpdns.org'
+      - '综合优选-15-162.159.39.152'
+      - '综合优选-16-cdn.555586.xyz'
+      - '综合优选-17-my.dnshe.com'
+      - '综合优选-18-ftm.omnihuman.games'
+      - '综合优选-19-vsscf.top'
+      - '综合优选-20-ahblog.cn'
+      - '电信优选-01-104.18.187.113'
+      - '电信优选-02-104.18.44.151'
+      - '电信优选-03-104.18.111.51'
+      - '电信优选-04-172.64.159.79'
+      - '电信优选-05-172.64.146.237'
+      - '联通优选-02-104.17.247.196'
+      - '联通优选-03-104.17.9.173'
+      - '联通优选-04-172.65.241.50'
+      - '联通优选-05-104.19.178.8'
+      - '移动优选-01-172.64.144.177'
+      - '移动优选-02-172.64.229.160'
+      - '移动优选-04-104.18.43.246'
+      - '移动优选-05-162.159.22.149'
+      - '全网优选-01-172.64.52.84'
+      - '全网优选-03-172.64.159.151'
+      - '全网优选-04-172.65.210.200'
 
   - name: 📡 手动选择
     type: select
@@ -600,58 +600,58 @@ proxy-groups:
   - name: 综合优选
     type: select
     proxies:
-      - '综合优选-01-saas.susu5600.dpdns.org'
-      - '综合优选-02-blog.646474.xyz'
-      - '综合优选-03-yg2.ygkkk.dpdns.org'
-      - '综合优选-04-www.5199dy.com'
-      - '综合优选-05-www.zjkrmv.com'
+      - '综合优选-01-www.zjkrmv.com'
+      - '综合优选-02-saas.susu5600.dpdns.org'
+      - '综合优选-03-1757760858.tencentapp.cn'
+      - '综合优选-04-www.galgamex.net'
+      - '综合优选-05-g.lma.de5.net'
       - '综合优选-06-fn.130519.xyz'
-      - '综合优选-07-cf.tencentapp.cn'
-      - '综合优选-08-1757760858.tencentapp.cn'
-      - '综合优选-09-p.etime.vip'
-      - '综合优选-10-cf.727672.xyz'
-      - '综合优选-11-cloudflare.idc.rocks'
-      - '综合优选-12-www.galgamex.net'
-      - '综合优选-13-cf.130519.xyz'
-      - '综合优选-14-b.lma.de5.net'
-      - '综合优选-15-animal.nuaa.tech'
-      - '综合优选-16-162.159.39.152'
-      - '综合优选-17-172.64.157.118'
-      - '综合优选-18-cu.877774.xyz'
-      - '综合优选-19-g.lma.de5.net'
-      - '综合优选-20-www.mfyx.cn'
+      - '综合优选-07-b.lma.de5.net'
+      - '综合优选-08-www.mfyx.cn'
+      - '综合优选-09-cf.130519.xyz'
+      - '综合优选-10-p.etime.vip'
+      - '综合优选-11-blog.646474.xyz'
+      - '综合优选-12-cloudflare.idc.rocks'
+      - '综合优选-13-animal.nuaa.tech'
+      - '综合优选-14-yg2.ygkkk.dpdns.org'
+      - '综合优选-15-162.159.39.152'
+      - '综合优选-16-cdn.555586.xyz'
+      - '综合优选-17-my.dnshe.com'
+      - '综合优选-18-ftm.omnihuman.games'
+      - '综合优选-19-vsscf.top'
+      - '综合优选-20-ahblog.cn'
 
   - name: 电信优选
     type: select
     proxies:
-      - '电信优选-01-172.64.159.79'
-      - '电信优选-02-172.64.146.237'
-      - '电信优选-04-104.17.38.60'
-      - '电信优选-05-104.18.43.202'
+      - '电信优选-01-104.18.187.113'
+      - '电信优选-02-104.18.44.151'
+      - '电信优选-03-104.18.111.51'
+      - '电信优选-04-172.64.159.79'
+      - '电信优选-05-172.64.146.237'
 
   - name: 联通优选
     type: select
     proxies:
-      - '联通优选-01-104.18.7.214'
-      - '联通优选-02-104.18.200.85'
-      - '联通优选-03-104.18.9.144'
-      - '联通优选-04-104.16.37.219'
-      - '联通优选-05-104.16.207.231'
+      - '联通优选-02-104.17.247.196'
+      - '联通优选-03-104.17.9.173'
+      - '联通优选-04-172.65.241.50'
+      - '联通优选-05-104.19.178.8'
 
   - name: 移动优选
     type: select
     proxies:
-      - '移动优选-01-172.64.229.160'
-      - '移动优选-02-162.159.22.149'
-      - '移动优选-03-172.65.208.161'
-      - '移动优选-04-104.17.214.107'
+      - '移动优选-01-172.64.144.177'
+      - '移动优选-02-172.64.229.160'
+      - '移动优选-04-104.18.43.246'
+      - '移动优选-05-162.159.22.149'
 
   - name: 全网优选
     type: select
     proxies:
-      - '全网优选-01-104.18.47.211'
-      - '全网优选-02-172.64.147.127'
-      - '全网优选-03-198.41.211.85'
+      - '全网优选-01-172.64.52.84'
+      - '全网优选-03-172.64.159.151'
+      - '全网优选-04-172.65.210.200'
 
   - name: 🌍 国外网站
     type: select
